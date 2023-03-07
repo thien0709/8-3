@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sono:wght@300&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+--white:#EDE9D5;
+--pink1:#db9393;
+--gray: #23272E;
+--orange:#f05123;
+--blue:#03e9f4;
+--blue1:#93BFCF;
+--pink: #FBC5C5;
+--green:#00ff55;
+--red: #E96479;
+
+}
+html {
+width: 100vw;
+height: 100vh;
+text-align: center;  
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/23194040_sl_011722_47900_31.jpg);
+    background-size: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container {
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+div-align: center;
+height: 100%;
+}
+.container.active .letter{ 
+display: block; 
+animation: Appear 1.5s backwards;
+}
+@keyframes Appear {
+0%{
+  transform: scale(0);
+}
+100%{
+  transform: scale(1);
+}
+}
+.container .letter{
+cursor: url(./cursor/iconmonstr-flower-4.svg),auto;
+display: none;
+position: absolute;
+background-color: var(--white);
+width:50%;
+height: 50%;
+border-radius: 2rem;
+}
+.container .letter h2{
+font-family: 'Great Vibes', cursive;
+font-size: 2rem;
+color: var(--gray);
+margin-top: 1.2rem;
+}
+.container .letter p{
+color: var(--orange);
+padding: 5rem;
+font-size: 1.3rem;
+font-family: 'Sono', sans-serif;
+height: 40%;
+}
+.container > p{
+top: 2rem;
+font-family: 'Great Vibes', cursive;
+color: var(--orange);
+font-size: 3rem;
+position: absolute;
+text-align: center;
+text-shadow: 2px 2px var(--gray);
+padding: 2rem;
+}
+.container > p:hover{
+cursor: url(./cursor/iconmonstr-favorite-8.svg), auto;
+color: var(--white);
+text-shadow: 0 0 5px var(--blue),
+0 0 25px var(--blue),
+0 0 50px var(--blue),
+0 0 75px var(--blue),
+0 0 100px var(--blue);
+}
+/*Snow*/
+@-webkit-keyframes snowflakes-fall {
+  0% {top:-10%}
+  100% {top:100%}
+}
+@-webkit-keyframes snowflakes-shake {
+  0%,100% {-webkit-transform:translateX(0);transform:translateX(0)}
+  50% {-webkit-transform:translateX(80px);transform:translateX(80px)}
+}
+@keyframes snowflakes-fall {
+  0% {top:-10%}
+  100% {top:100%}
+}
+@keyframes snowflakes-shake {
+  0%,100%{ transform:translateX(0)}
+  50% {transform:translateX(80px)}
+}
+.snowflake {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+  position:fixed;
+  top:-10%;
+  z-index:9999;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  cursor:default;
+  -webkit-animation-name:snowflakes-fall,snowflakes-shake;
+  -webkit-animation-duration:10s,3s;
+  -webkit-animation-timing-function:linear,ease-in-out;
+  -webkit-animation-iteration-count:infinite,infinite;
+  -webkit-animation-play-state:running,running;
+  animation-name:snowflakes-fall,snowflakes-shake;
+  animation-duration:10s,3s;
+  animation-timing-function:linear,ease-in-out;
+  animation-iteration-count:infinite,infinite;
+  animation-play-state:running,running;
+}
+.snowflake:nth-of-type(0){
+  left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s
+}
+.snowflake:nth-of-type(1){
+  left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s
+}
+.snowflake:nth-of-type(2){
+  left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s
+}
+.snowflake:nth-of-type(3){
+  left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s
+}
+.snowflake:nth-of-type(4){
+  left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s
+}
+.snowflake:nth-of-type(5){
+  left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s
+}
+.snowflake:nth-of-type(6){
+  left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s
+}
+.snowflake:nth-of-type(7){
+  left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s
+}
+.snowflake:nth-of-type(8){
+  left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s
+}
+.snowflake:nth-of-type(9){
+  left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s
+}
+.snowflake:nth-of-type(10){
+  left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s
+}
+.snowflake:nth-of-type(11){
+  left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s
+}
+.letter .icon img{
+  width: 20%;
+}

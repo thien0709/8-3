@@ -1,0 +1,53 @@
+/* PC */
+@media (min-width: 64em) {
+    html{
+        font-size: 18px;
+    }
+    svg{
+        width: 70%;
+        height: 70%;
+    }
+  }
+  
+  /* Tablet & Mobile */
+  @media (max-width: 63.9375em) {
+    .container .letter p{
+        padding: 3rem;
+    }
+  }
+  
+  /* Tablet */
+  @media (min-width: 46.25em) and (max-width: 63.9375em) {
+    html{
+        font-size: 10px;
+    }
+    .container .letter p{
+        font-size: 3rem;
+    }
+
+  }
+  
+  /* Mobile */
+  @media (max-width: 46.1875em) {
+    html{
+        font-size: 8px;
+    }
+    .container .letter{
+        width: 90%;
+        height: 70%;
+    }
+    .container .letter p{
+        font-size: 2.5rem;
+        padding: 5rem;
+    }
+    .container .letter h2{
+        font-size: 3rem;
+    }
+    .snowflake {
+        font-size: 2rem;
+    }
+    .letter .icon img{
+        width: 30%;
+        margin-top: 40%;
+      }    
+  }
